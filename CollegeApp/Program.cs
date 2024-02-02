@@ -17,6 +17,7 @@ builder.Services.AddAutoMapper(typeof(AUtoMapperConfig));
 
 builder.Services.AddScoped<IMyLogger, LogToFile>();
 builder.Services.AddScoped<IStudentRepository, StudentRepository>();
+builder.Services.AddScoped<IDepartmentRepository, DepartmentRepository>();
 builder.Services.AddScoped(typeof(ICollegeRepository<>), typeof(CollegeRepository<>));
 
 builder.Services.AddDbContext<CollegeDbContext>(options =>
@@ -34,9 +35,11 @@ var app = builder.Build();
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
-    app.UseSwagger();
-    app.UseSwaggerUI();
+    
 }
+app.UseSwagger();
+app.UseSwaggerUI();
+
 
 app.UseHttpsRedirection();
 

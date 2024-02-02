@@ -9,6 +9,7 @@ namespace CollegeApp.Configurations
         public AUtoMapperConfig()
         {
             CreateMap<Student, StudentDto>().ReverseMap();
+            CreateMap<Department, DepartmentDto>().ReverseMap();    
         }
     }
 }

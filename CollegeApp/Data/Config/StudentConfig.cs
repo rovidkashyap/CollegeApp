@@ -24,14 +24,16 @@ namespace CollegeApp.Data.Config
                 StudentName = "Rovid",
                 Address = "UP, India",
                 Email = "rvd.kashyap@gmail.com",
-                DOB = new DateTime(1990, 11, 15)
+                DOB = new DateTime(1990, 11, 15),
+                DepartmentId = 1
             }, 
                 new Student(){
                 Id = 2,
                 StudentName = "Kashyap",
                 Address = "UP, India",
                 Email = "rvd.kashyap@gmail.com",
-                DOB = new DateTime(1990, 11, 15)
+                DOB = new DateTime(1990, 11, 15),
+                DepartmentId = 2
             }
             });
 

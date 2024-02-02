@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "mssql1": {
+      "serviceConnectorResourceId": "/subscriptions/[parameters('subscriptionId')]/resourcegroups/[parameters('resourceGroupName')]/providers/Microsoft.Web/sites/CollegeAppApi/providers/Microsoft.ServiceLinker/linkers/ConnectionStringsCollegeConnectionString_8E8C43CA61",
+      "secretStore": "AzureAppSettings",
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourcegroups/[parameters('resourceGroupName')]/providers/Microsoft.Sql/servers/collegeappdbserver/databases/CollegeApp_db",
+      "type": "mssql.azure",
+      "connectionId": "ConnectionStrings:CollegeConnectionString",
+      "dynamicId": null
+    }
+  }
+}
